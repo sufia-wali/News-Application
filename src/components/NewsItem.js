@@ -8,7 +8,9 @@ export class NewsItem extends Component {
       <>
           <div className="card">
             <div className="card-image">
-              <img src={!imageUrl ? "https://cdn.cnn.com/cnnnext/dam/assets/220116190335-01-us-ballistic-missiel-submarine-guam-intl-hnk-ml-super-tease.jpg" : imageUrl} alt="news_info" />
+            {/* <div class="col s2"> */}
+              <img className="circle responsive-img" src={!imageUrl ? "https://cdn.cnn.com/cnnnext/dam/assets/220116190335-01-us-ballistic-missiel-submarine-guam-intl-hnk-ml-super-tease.jpg" : imageUrl} alt="news_info"  />
+            {/* </div> */}
             </div>
             <div className="card-title black-text">{title}</div>
             <div className="card-content hide-on-med-and-down">
